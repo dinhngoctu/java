@@ -11,14 +11,16 @@ public class ConvertTemperature {
             System.out.println("0. Exit");
             choice = sc.nextByte();
             int value = sc.nextInt();
-            sc.nextInt();
+            sc.nextLine();
+            double result;
             switch (choice) {
                 case 1:
-                    int result = celsiusToFahrenheit(value);
+                    result = celsiusToFahrenheit(value);
                     System.out.println(result);
                     break;
                 case 2:
-
+                    result = fahrenheitToCelsius(value);
+                    System.out.println(result);
                     break;
             }
         } while (choice != 0);
