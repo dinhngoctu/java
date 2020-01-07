@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08711eeb-d9c7-4358-bad3-d38f8d6b4292" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ComparatorInterface/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ComparatorInterface/src/CircleComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ComparatorInterface/src/CircleComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ColorableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ComparableCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ComparableCircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[Thực hành] triển khai interface 'Comparable' cho các lớp hình học/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[Thực hành] triển khai interface 'Comparable' cho các lớp hình học/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[Thực hành] triển khai interface 'Comparable' cho các lớp hình học/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[Thực hành] triển khai interface 'Comparable' cho các lớp hình học/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[Thực hành] triển khai interface 'Comparable' cho các lớp hình học/[Thực hành] triển khai interface 'Comparable' cho các lớp hình học.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,10 +49,20 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ResizeableTest">
-    <configuration name="RectangleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RectangleTest" />
+  <component name="RunManager" selected="Application.ColorableTest">
+    <configuration name="ColorableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ColorableTest" />
+      <module name="pf-java-shape" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparableCircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ComparableCircleTest" />
       <module name="pf-java-shape" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,10 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ColorableTest" />
+        <item itemvalue="Application.ComparableCircleTest" />
         <item itemvalue="Application.ResizeableTest" />
         <item itemvalue="Application.SquareTest" />
         <item itemvalue="Application.ShapeTest" />
-        <item itemvalue="Application.RectangleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -111,38 +134,38 @@
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
     <state x="521" y="196" key="#Notifications/0.37.1800.1085@0.37.1800.1085" timestamp="1578383382502" />
-    <state x="787" y="260" key="#com.intellij.ide.util.MemberChooser" timestamp="1578382133514">
+    <state x="787" y="260" key="#com.intellij.ide.util.MemberChooser" timestamp="1578390440804">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
-    <state x="787" y="260" key="#com.intellij.ide.util.MemberChooser/0.37.1800.1085@0.37.1800.1085" timestamp="1578382133514" />
+    <state x="787" y="260" key="#com.intellij.ide.util.MemberChooser/0.37.1800.1085@0.37.1800.1085" timestamp="1578390440804" />
     <state x="833" y="501" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578382050701">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
     <state x="833" y="501" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.37.1800.1085@0.37.1800.1085" timestamp="1578382050701" />
-    <state x="756" y="317" key="FileChooserDialogImpl" timestamp="1578386427816">
+    <state x="756" y="317" key="FileChooserDialogImpl" timestamp="1578388162153">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
-    <state x="756" y="317" key="FileChooserDialogImpl/0.37.1800.1085@0.37.1800.1085" timestamp="1578386427816" />
+    <state x="756" y="317" key="FileChooserDialogImpl/0.37.1800.1085@0.37.1800.1085" timestamp="1578388162153" />
     <state x="779" y="498" key="Github.CreateGistDialog" timestamp="1578383353788">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
     <state x="779" y="498" key="Github.CreateGistDialog/0.37.1800.1085@0.37.1800.1085" timestamp="1578383353788" />
-    <state width="1340" height="254" key="GridCell.Tab.0.bottom" timestamp="1578387786392">
+    <state width="1740" height="254" key="GridCell.Tab.0.bottom" timestamp="1578391526626">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
-    <state width="1340" height="254" key="GridCell.Tab.0.bottom/0.37.1800.1085@0.37.1800.1085" timestamp="1578387786392" />
-    <state width="1340" height="254" key="GridCell.Tab.0.center" timestamp="1578387786392">
+    <state width="1740" height="254" key="GridCell.Tab.0.bottom/0.37.1800.1085@0.37.1800.1085" timestamp="1578391526626" />
+    <state width="1740" height="254" key="GridCell.Tab.0.center" timestamp="1578391526625">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
-    <state width="1340" height="254" key="GridCell.Tab.0.center/0.37.1800.1085@0.37.1800.1085" timestamp="1578387786392" />
-    <state width="1340" height="254" key="GridCell.Tab.0.left" timestamp="1578387786391">
+    <state width="1740" height="254" key="GridCell.Tab.0.center/0.37.1800.1085@0.37.1800.1085" timestamp="1578391526625" />
+    <state width="1740" height="254" key="GridCell.Tab.0.left" timestamp="1578391526624">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
-    <state width="1340" height="254" key="GridCell.Tab.0.left/0.37.1800.1085@0.37.1800.1085" timestamp="1578387786391" />
-    <state width="1340" height="254" key="GridCell.Tab.0.right" timestamp="1578387786392">
+    <state width="1740" height="254" key="GridCell.Tab.0.left/0.37.1800.1085@0.37.1800.1085" timestamp="1578391526624" />
+    <state width="1740" height="254" key="GridCell.Tab.0.right" timestamp="1578391526625">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>
-    <state width="1340" height="254" key="GridCell.Tab.0.right/0.37.1800.1085@0.37.1800.1085" timestamp="1578387786392" />
+    <state width="1740" height="254" key="GridCell.Tab.0.right/0.37.1800.1085@0.37.1800.1085" timestamp="1578391526625" />
     <state x="391" y="163" key="SettingsEditor" timestamp="1578383299936">
       <screen x="0" y="37" width="1800" height="1085" />
     </state>

@@ -32,6 +32,7 @@ public class Rectangle extends Shape implements Resizeable {
         this.length = length;
     }
 
+    @Override
     public double getArea() {
         return width * this.length;
     }
@@ -49,8 +50,9 @@ public class Rectangle extends Shape implements Resizeable {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
     @Override
-    public void resize(double p){
+    public void resize(double p) {
         this.width *= p;
         this.length *= p;
     }

@@ -26,6 +26,12 @@ public class Shape {
         this.filled = filled;
     }
 
+    public double getArea() {
+        return 0;
+    }
+
+    ;
+
     @Override
     public String toString() {
         return "A Shape with color of "
