@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08711eeb-d9c7-4358-bad3-d38f8d6b4292" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DayCalculator/src/NextDayCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Tính ngày tiếp theo/src/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Tính ngày tiếp theo/src/NextDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Tính ngày tiếp theo/src/presentDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Tính ngày tiếp theo/src/presentMonth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Tính ngày tiếp theo/src/presentYear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../absolute-number-calculator/absolute-number-calculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../absolute-number-calculator/src/AbsoluteNumberCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../absolute-number-calculator/test/AbsoluteNumberCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResizeableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResizeableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-cleancode-refactoring-variable-extraction-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
