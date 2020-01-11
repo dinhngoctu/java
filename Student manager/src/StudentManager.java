@@ -1,8 +1,6 @@
 import java.util.*;
-import java.util.Iterator;
-import java.util.LinkedList;
 
-public class StudentManager{
+public class StudentManager {
     static Scanner sc = new Scanner(System.in);
     static ArrayList<Student> myList = new ArrayList<>();
     static Iterator<Student> iter;
@@ -48,9 +46,10 @@ public class StudentManager{
     void editInformationStudentMangaer() {
         System.out.println("Nhap vi tri muon sua");
         int index = sc.nextInt();
-        while (iter.hasNext()) {
-            if (index == iter.next().index) {
-                iter.next().editInformationStudent();
+        for (Student e : myList
+        ) {
+            if (index == e.index) {
+                e.editInformationStudent();
             }
         }
         System.out.println("done");
@@ -71,9 +70,14 @@ public class StudentManager{
         System.out.println("Nhap vi tri muon them");
         int index = sc.nextInt();
         myList.add(index, student);
-//        for (int i = index; i < myList.size(); i++) {
-//            myList.get(i).setIndexIncrease();
-//        }
+        for (int i = myList.size()-1; i > index; i--) {
+            myList.get(i).setIndexIncrease();
+        }
+        myList.get(index).index=index+1;
+        myList.remove(myList.size()-1);
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
         System.out.println("done");
     }
 
@@ -81,9 +85,12 @@ public class StudentManager{
         System.out.println("Nhap vi tri muon xoa");
         int index = sc.nextInt();
         myList.remove(index);
-//        while (iter.hasNext()) {
-//            iter.next().setIndexDecrease();
-//        }
+        for (int i = index; i < myList.size(); i++) {
+            myList.get(i).setIndexDecrease();
+        }
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
         System.out.println("done");
     }
 
@@ -140,14 +147,14 @@ public class StudentManager{
                         max = myList.get(i).searchValue;
                     }
                 }
-                if (max>0){
-                    for (int i=0;i<myList.size();i++){
-                        if (myList.get(i).searchValue==max){
+                if (max > 0) {
+                    for (int i = 0; i < myList.size(); i++) {
+                        if (myList.get(i).searchValue == max) {
                             System.out.println(myList.get(i));
                         }
                     }
                 }
-                while (iter.hasNext()){
+                while (iter.hasNext()) {
                     iter.next().setDefault();
                 }
                 break;

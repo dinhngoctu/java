@@ -32,7 +32,6 @@ public class Student {
         System.out.println("Nhap gioi tinh");
         this.sex = (sc.nextLine()).toUpperCase();
         System.out.println(toString());
-        System.out.println("done");
     }
 
 
@@ -69,13 +68,15 @@ public class Student {
     }
 
     void setIndexDecrease() {
-        this.index-=1;
+        this.index -= 1;
     }
+
     void setIndexIncrease() {
-        this.index+=1;
+        this.index += 1;
     }
-    void setDefault(){
-        this.searchValue=0;
+
+    void setDefault() {
+        this.searchValue = 0;
     }
 
     @Override
