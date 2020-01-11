@@ -68,8 +68,14 @@ public class Student {
         }
     }
 
-    void setIndex(int i) {
-        this.index = i + 1;
+    void setIndexDecrease() {
+        this.index-=1;
+    }
+    void setIndexIncrease() {
+        this.index+=1;
+    }
+    void setDefault(){
+        this.searchValue=0;
     }
 
     @Override

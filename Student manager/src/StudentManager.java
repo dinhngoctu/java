@@ -2,18 +2,11 @@ import java.util.*;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class StudentManager extends ArrayList<Student> {
+public class StudentManager{
     static Scanner sc = new Scanner(System.in);
     static ArrayList<Student> myList = new ArrayList<>();
     static Iterator<Student> iter;
     static private int chooseSearchValue;
-
-//    @Override
-//    public void add(int index, Student e) {
-//        System.out.println("dang");
-//        e.setIndex(index);
-//        super.add(index, e);
-//    }
 
     public static void main(String[] args) {
         Student st1 = new Student("Nguyen Van Nguyen", "MSV001", "MALE", 23);
@@ -46,6 +39,9 @@ public class StudentManager extends ArrayList<Student> {
                 studentManager.searchStudentMangaer();
                 break;
         }
+//        for (int i = 0; i < myList.size(); i++) {
+//            System.out.println(myList.get(i));
+//        }
 
     }
 
@@ -75,6 +71,9 @@ public class StudentManager extends ArrayList<Student> {
         System.out.println("Nhap vi tri muon them");
         int index = sc.nextInt();
         myList.add(index, student);
+//        for (int i = index; i < myList.size(); i++) {
+//            myList.get(i).setIndexIncrease();
+//        }
         System.out.println("done");
     }
 
@@ -82,6 +81,9 @@ public class StudentManager extends ArrayList<Student> {
         System.out.println("Nhap vi tri muon xoa");
         int index = sc.nextInt();
         myList.remove(index);
+//        while (iter.hasNext()) {
+//            iter.next().setIndexDecrease();
+//        }
         System.out.println("done");
     }
 
@@ -144,6 +146,9 @@ public class StudentManager extends ArrayList<Student> {
                             System.out.println(myList.get(i));
                         }
                     }
+                }
+                while (iter.hasNext()){
+                    iter.next().setDefault();
                 }
                 break;
             case 3:
