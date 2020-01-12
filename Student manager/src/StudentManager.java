@@ -12,6 +12,7 @@ public class StudentManager {
         Student st3 = new Student("Dang Thi Ngoc Lan", "MSV003", "FEMALE", 23);
         Student st4 = new Student("Nguyen Thi Thanh Tu", "MSV004", "FEMALE", 24);
         Student st5 = new Student("Phan Duc Anh", "MSV005", "MALE", 20);
+        Student st6 = new Student("Nguyen Van Nguyen Anh", "MSV005", "MALE", 21);
         iter = myList.iterator();
         while (iter.hasNext()) {
             System.out.println(iter.next().toString());
@@ -70,11 +71,11 @@ public class StudentManager {
         System.out.println("Nhap vi tri muon them");
         int index = sc.nextInt();
         myList.add(index, student);
-        for (int i = myList.size()-1; i > index; i--) {
+        for (int i = myList.size() - 1; i > index; i--) {
             myList.get(i).setIndexIncrease();
         }
-        myList.get(index).index=index+1;
-        myList.remove(myList.size()-1);
+        myList.get(index).index = index + 1;
+        myList.remove(myList.size() - 1);
         for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
         }
@@ -104,14 +105,14 @@ public class StudentManager {
     }
 
     static int getchooseSearchValue(String str) {
-        if (str.equalsIgnoreCase("MALE") || str.equalsIgnoreCase("FEMALE")) {
-            chooseSearchValue = 2;
-        } else if (str.length() == 2) {
-            if (str.charAt(0) > 47 && str.charAt(0) < 58) {
-                if (str.charAt(1) > 47 && str.charAt(1) < 58) {
-                    chooseSearchValue = 1;
-                }
+
+        if (str.charAt(0) > 47 && str.charAt(0) < 58) {
+            if (str.charAt(1) > 47 && str.charAt(1) < 58) {
+                chooseSearchValue = 1;
             }
+
+        } else if (str.equalsIgnoreCase("MALE") || str.equalsIgnoreCase("FEMALE")) {
+            chooseSearchValue = 2;
         } else if ((str.substring(0, 3)).equalsIgnoreCase("MSV")) {
             chooseSearchValue = 3;
         } else {

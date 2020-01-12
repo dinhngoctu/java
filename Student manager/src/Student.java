@@ -36,7 +36,7 @@ public class Student {
 
 
     void searchAge(String str) {
-        if (this.age == Integer.parseInt(str)) {
+        if (this.age == Integer.parseInt(str.substring(0,2))) {
             System.out.println(this);
         }
 
@@ -52,10 +52,21 @@ public class Student {
     void searchName(String str) {
         String[] arrStr = str.split(" ");
         String[] arrName = this.name.split(" ");
-        for (int i = 0; i < arrStr.length; i++) {
+        if (arrStr.length > 1) {
+            for (int i = 0; i < arrStr.length; i++) {
+                for (int j = 0; j < arrName.length; j++) {
+                    if (arrStr[i].equalsIgnoreCase(arrName[j])) {
+                        searchValue++;
+                    }
+                }
+            }
+        }
+        if (arrStr.length == 1){
             for (int j = 0; j < arrName.length; j++) {
-                if (arrStr[i].equalsIgnoreCase(arrName[j])) {
-                    searchValue++;
+                if (arrStr[0].length() <= arrName[j].length()) {
+                    if (str.equalsIgnoreCase(arrName[j].substring(0,arrStr[0].length()))) {
+                        searchValue++;
+                    }
                 }
             }
         }
