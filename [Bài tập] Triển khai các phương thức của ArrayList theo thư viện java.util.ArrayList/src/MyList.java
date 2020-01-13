@@ -18,10 +18,12 @@ public class MyList<E> {
     }
 
     public void add(int index, E element) {
-        if (size == elements.length) {
             ensureCapa();
+        for (int i = size - 1; i > index; i--) {
+            elements[i] = elements[i - 1];
         }
-        elements[size++] = element;
+        elements[index] = element;
+        size++;
     }
 
     public E remove(int index) {
@@ -31,6 +33,7 @@ public class MyList<E> {
             elements[i] = elements[i + 1];
         }
         elements = Arrays.copyOf(elements, newsize);
+        size--;
         return temp;
     }
 
@@ -40,7 +43,7 @@ public class MyList<E> {
         }
         return elements.length;
     }
-    public E clone(){
-        E[] clone = new Object[elements.length];
-    }
+//    public E clone(){
+//        E[] clone = new Object[elements.length];
+//    }
 }
